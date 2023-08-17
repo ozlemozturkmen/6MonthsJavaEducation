@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class GradeAverage {
+    public static void main(String[] args) {
+
+        double math,phys,kim,turk,tarih,music;
+        Scanner input=new Scanner(System.in);
+        System.out.print("LÜtfen matematik notunuzu giriniz:");
+        math=input.nextDouble();
+
+        System.out.print("Lütfen fizik notunuzu giriniz: ");
+        phys=input.nextDouble();
+
+        System.out.print("Lütfen Kimya notunu giriniz:");
+        kim= input.nextDouble();
+
+        System.out.print("Lütfen Türkçe notunu giriniz:");
+        turk= input.nextDouble();
+
+        System.out.print("Lütfen Tarih notunu giriniz:");
+        tarih= input.nextDouble();
+
+        System.out.print("Lütfen müzik notunu giriniz: ");
+        music= input.nextDouble();
+
+        double avarege=(math+phys+kim+turk+tarih+music)/6.0;
+        System.out.println("Derslerin ortalama notu:"+avarege);
+        System.out.println(avarege>=60 ? "Tebrikler sınıfı geçtiniz":"Üzgününüz sınıf tekrarı yapmak durumundasınız");
+
+
+
+
+
+    }
+
+}
