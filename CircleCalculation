@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class CircleCalculation {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        double r,pi=3.14,area,aci;
+
+        System.out.print("Dairenin yarıçapını giriniz: " );
+        r= sc.nextDouble();
+        System.out.print("Merkez açının ölçüsünü giriniz:");
+        aci=sc.nextDouble();
+        area=(pi*(r*r)*aci)/360;
+        System.out.println("Daire diliminin Alanı: " + area);
+
+
+
+    }
+}
