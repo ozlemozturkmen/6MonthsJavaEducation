@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class KdvAmountCalculation {
+    public static void main(String[] args) {
+        double cash,kdvRate=0,kdvCash,total;
+        Scanner input=new Scanner(System.in);
+        System.out.print("Ücreti giriniz:");
+        cash= input.nextDouble();
+        kdvRate=cash<1000? 0.18 : 0.8;
+         kdvCash=cash*kdvRate;
+         total=cash+kdvCash;
+        System.out.println("KDV'siz Tutar:" + cash);
+        System.out.println("KDV Oranı:" +kdvRate);
+        System.out.println("KDV tutarı :" +kdvCash);
+        System.out.println("KDV'li Tutar: " +total);
