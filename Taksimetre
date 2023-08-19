@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Taksimetre {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        double km,total,perKm=2.20;
+        System.out.print("Gidilen km'yi giriniz:");
+        km=sc.nextDouble();
+        total=km*perKm;
+        //total+=10;
+        // total=(total<20)?20:total;
+        System.out.println((total<20) ? 20:total+10);
+
+
+
+
+    }
+}
