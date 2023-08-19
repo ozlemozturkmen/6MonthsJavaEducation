@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class RightTriangleCalculation {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        double edge1,area,environment,edge2,edge3,u;
+        System.out.print("Bir kenar uzunluğu giriniz:");
+        edge1= sc.nextDouble();
+        System.out.print("Bir kenar uzunluğu giriniz:");
+        edge2= sc.nextDouble();
+        System.out.print("Bir kenar uzunluğu giriniz:");
+        edge3=sc.nextDouble();
+        u=(edge1+edge2+edge3)/2;
+        environment=2*u;
+        area=u*(u-edge1)*(u-edge2)*(u-edge3);
+        System.out.println("Üçgenin çevresi :" +environment);
+        System.out.println("Üçgenin alanı: " + area);
+
