@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class ManavKasa {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+        double armut,elma,domates,muz,patlican;
+        System.out.print("Kaç kg armut aldınız?:");
+        armut= sc.nextInt();
+        System.out.print("Kaç kg elma aldınız?:");
+        elma= sc.nextInt();
+        System.out.print("Kaç kg domates aldınız?:");
+        domates=sc.nextInt();
+        System.out.print("Kaç kg muz aldınız? : ");
+        muz=sc.nextInt();
+        System.out.print("Kaç kg patlıcan aldınız?: ");
+        patlican= sc.nextInt();
+
+        double total = ((armut * 2.14) + (elma * 3.67) + (domates * 1.11) + (muz * 0.95) + (patlican * 5.0));
+        System.out.println("Toplam  Tutar :" + total+ " TL");
+
+
+
+
+
+
+    }
+
+
+
+
+    }
